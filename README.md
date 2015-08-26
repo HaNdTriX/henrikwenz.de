@@ -6,22 +6,22 @@ I use this generator for my personal site. Feel free to use it.
 
 ### Develop
 
-  gulp
+    gulp
 
 Runs build, watch, and starts a [browserSync](http://www.browsersync.io/) server. 
 
 ### Build
 
-  gulp build
+    gulp build
 
 Builds the app.
 
-  gulp build --release
+    gulp build --release
 
 Builds the app and minifies all assets.
 
 ### Deploy
 
-  gulp deploy
+    gulp deploy
 
 Deploys the app to github static pages.
