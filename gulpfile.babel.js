@@ -16,7 +16,7 @@ let src = {};
 let watch = false;
 
 const RELEASE = argv.release;
-const GOOGLE_ANALYTICS_ID = 'UA-XXXXX-X';
+const GOOGLE_ANALYTICS_ID = 'UA-66789892-1';
 const AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
   'ie_mob >= 10',
