@@ -1,4 +1,4 @@
-# Static Site Genrator
+# Simple Static Site Generator
 
 I use this generator for my personal site. Feel free to use it.
 
