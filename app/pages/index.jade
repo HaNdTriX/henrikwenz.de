@@ -1,0 +1,68 @@
+extends ../layouts/default
+
+block meta
+  meta(name="keywords" lang="de" content="freelancer, javascript, consulting")
+  meta(name="author" content="Henrik Wenz")
+  meta(name="copyright" content="Henrik Wenz")
+
+block title
+  title Henrik Wenz
+
+block body
+
+  header#header(class='jumbotron bg-blue')
+    .container.text-center
+      img(
+        src='images/me.jpeg'
+        srcset='images/me.jpeg 1x, images/me@2x.jpeg 2x'
+        alt='Logo'
+        class='img-circle img-logo'
+      )
+      h1 Henrik Wenz
+        small(class='animated pulse') Software Entwickler · Freelancer
+
+  section(class='about animated fadeInUp')
+    .container
+      p(class='lead') Ich bin leidenschaftlicher Softwareentwickler und Berater mit Liebe für das Internet und moderne Web-Technologien. Dabei setze ich gerne auf Open Source Lösungen. Mein Ziel ist es innovative, skalierbare Produkte zu erschaffen und Unternehmen durch beratung neue Wege auf zu zeigen.
+
+  section(class='skills bg-gray animated fadeInUp')
+    .container
+      h2(id='skills') Skills
+    svg(id='skill-chart')
+
+  section(class="social animated fadeInUp")
+    .container.text-center
+      .col-xs-3
+        a(
+          target="_blank"
+          href="http://stackoverflow.com/users/1035893/"
+          title="stackoverflow"
+        )
+          i.fa.fa-2x.fa-stack-overflow
+      .col-xs-3
+        a(
+          target="_blank"
+          href="https://twitter.com/HenrikWenz"
+          title="twitter"
+        )
+          i.fa.fa-2x.fa-twitter
+      .col-xs-3
+        a(
+          target="_blank"
+          href="https://github.com/handtrix"
+          title="github"
+        )
+          i.fa.fa-2x.fa-github
+      .col-xs-3
+        a(
+          href="mailto:botprotect-handtrix@gmail.com"
+          onmouseover="this.href=this.href.replace(/botprotect-/g,'');"
+          title="E-Mail"
+        )
+          i.fa.fa-2x.fa-envelope
+
+  footer.footer
+    .container
+      span
+        i.fa.fa-copyright
+        |  2015 Henrik Wenz

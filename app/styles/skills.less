@@ -1,0 +1,39 @@
+.skills{
+  position: relative;
+  min-height: 500px;
+}
+
+#skill-chart{
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  .node {
+    cursor: pointer;
+  }
+
+  .node:hover {
+    stroke: white;
+    stroke-width: 3px;
+  }
+
+  .node--leaf {
+    fill: #b73c3c;
+  }
+
+  .label {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-anchor: middle;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+  }
+
+  .label,
+  .node--root,
+  .node--leaf {
+    pointer-events: none;
+  }
+
+}
