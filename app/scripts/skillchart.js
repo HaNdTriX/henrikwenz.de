@@ -5,7 +5,7 @@ function createSkillchart() {
   var margin = 10;
   var parent = document.getElementById('skill-chart').parentElement;
   var diameter = parent.clientHeight;
-  var width = window.outerWidth;
+  var width = $(window).outerWidth();
 
   var color = d3.scale.linear()
     .domain([-1, 5])
@@ -127,10 +127,9 @@ function createSkillchart() {
 
   // onResize
   window.addEventListener('resize', function() {
-    width = window.outerWidth;
-    console.log('resize', width);
+    width = $(window).outerWidth();
     svg
-      .attr('width', window.outerWidth)
+      .attr('width', width)
       .select('g')
       .attr('transform', 'translate(' + width / 2 + ',' + diameter / 2 + ')');
   });
