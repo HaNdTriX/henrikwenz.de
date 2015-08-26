@@ -74,6 +74,9 @@ function createSkillchart() {
     d3.select('body')
       .on('click', function() {
         zoom(root);
+      })
+      .on('touchstart', function() {
+        zoom(root);
       });
 
     function zoomTo(v) {
